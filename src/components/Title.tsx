@@ -29,7 +29,13 @@ interface TitleProps
   children: string;
 }
 
-function Title({ children, size, color, className, ...rest }: TitleProps) {
+export const Title = ({
+  children,
+  size,
+  color,
+  className,
+  ...rest
+}: TitleProps) => {
   const classes = twMerge(title({ size, color }), className);
 
   return (
@@ -37,6 +43,4 @@ function Title({ children, size, color, className, ...rest }: TitleProps) {
       {children}
     </h1>
   );
-}
-
-export default Title;
+};

@@ -34,7 +34,13 @@ interface ButtonProps
   children: string;
 }
 
-function Button({ children, size, color, className, ...rest }: ButtonProps) {
+export const Button = ({
+  children,
+  size,
+  color,
+  className,
+  ...rest
+}: ButtonProps) => {
   const classes = twMerge(button({ size, color }), className);
 
   return (
@@ -42,6 +48,4 @@ function Button({ children, size, color, className, ...rest }: ButtonProps) {
       {children}
     </button>
   );
-}
-
-export default Button;
+};

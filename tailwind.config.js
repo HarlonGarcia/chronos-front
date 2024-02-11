@@ -9,6 +9,7 @@ export default {
         moss: '#031926',
         primary: '#00BD9D',
         secondary: '#008478',
+        error: '#ff6666',
       },
       fontFamily: {
         sans: ['SourceSans3', 'monospace'],

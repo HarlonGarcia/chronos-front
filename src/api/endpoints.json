@@ -1,0 +1,5 @@
+{
+  "login": "/login",
+  "users": "/users",
+  "tasks": "/tasks"
+}

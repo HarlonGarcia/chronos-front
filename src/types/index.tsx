@@ -13,3 +13,7 @@ export interface ITask {
   createdAt: Date;
   finished: boolean;
 }
+
+export interface IAuthResponse {
+  accessToken: string;
+}
