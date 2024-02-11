@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./assets/fonts/Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'SourceSans3';
+  src: url('./assets/fonts/SourceSans3-VariableFont_wght.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  min-height: 100dvh;
+  --webkit-font-smoothing: antialiased;
+}
+
+input {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
