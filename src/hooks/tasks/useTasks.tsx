@@ -5,7 +5,7 @@ import { api, getUrl } from '../../api';
 const getTasks = async (userId: string): Promise<ITask[]> => {
   const { data } = await api.get(getUrl('tasks'), {
     headers: {
-      "user-id": userId,
+      'user-id': userId,
     },
   });
 
@@ -23,5 +23,6 @@ export const useTasks = (userId?: string) => {
       return getTasks(userId);
     },
     retry: false,
+    enabled: !!userId,
   });
 };

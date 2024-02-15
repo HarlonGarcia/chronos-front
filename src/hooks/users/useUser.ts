@@ -25,5 +25,6 @@ export const useUser = ({ id, callback }: IGetUserConfig) => {
       return getUser({ id, callback });
     },
     retry: false,
+    enabled: !!id,
   });
 };

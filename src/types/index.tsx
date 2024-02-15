@@ -1,3 +1,11 @@
+export interface ISvgProps {
+  className?: string;
+}
+
+export interface IAuthResponse {
+  accessToken: string;
+}
+
 export interface IUser {
   id: string;
   name: string;
@@ -12,8 +20,4 @@ export interface ITask {
   title: string;
   createdAt: Date;
   finished: boolean;
-}
-
-export interface IAuthResponse {
-  accessToken: string;
 }
